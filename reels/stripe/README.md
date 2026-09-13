@@ -2,7 +2,7 @@
 
 **Wetware** · a zebrafish pattern the tissue argues out
 
-<img src="loop.webp" width="320" align="right">
+<p align="center"><img src="loop.webp" width="320"></p>
 
 > *Turing predicted chemicals. These are cells.*
 

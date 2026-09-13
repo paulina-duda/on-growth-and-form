@@ -2,7 +2,7 @@
 
 **Wetware** · an animal that pulls itself apart
 
-<img src="loop.webp" width="320" align="right">
+<p align="center"><img src="loop.webp" width="320"></p>
 
 > *It reproduces by disagreeing with itself.*
 

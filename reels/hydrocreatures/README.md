@@ -2,7 +2,7 @@
 
 **Biomorph** · three animals that are not animals
 
-<img src="loop.webp" width="320" align="right">
+<p align="center"><img src="loop.webp" width="320"></p>
 
 > *Nothing here intends anything. You do.*
 

@@ -1,15 +1,8 @@
 <div align="center">
-<pre>
-█▀▀▀ █ ▄▀ █▀▀▀ █▀▀█ █▀▀▀ █▀▀█ ▀██▀ █▀▀█ █▀▀▄ █▄ █ ▀██▀ █▀▀▀ ▀▀██ █▀▀▀ █▀▀▀ █▀▀█
-█▀▀  ██   ▀▀▀█ █▀▀▀ █▀▀  ██▀▀  ██  █  █ █  █ █▀▄█  ██  █    ▄█▀  █▀▀  █ ▀█ █  █
-█▄▄▄ █ ▀▄ ▄▄▄█ █    █▄▄▄ █ ▀▄  ██  █▄▄█ █▄▄▀ █ ▀█ ▄██▄ █▄▄▄ █▄▄▄ █▄▄▄ █▄▄█ █▄▄█
-───────────────────────────────────────────────────────────────────────────────
-     B I O L O G Y    I S    T H E    O R I G I N A L    A L G O R I T H M
-</pre>
-</div>
 
+<img src="docs/banner.svg" alt="EKSPERTODNICZEGO" width="640">
 
-<div align="center">
+**Biology is the original algorithm**
 
 [![Instagram](https://img.shields.io/badge/Instagram-@ekspertodniczego-E4405F?logo=instagram&logoColor=white)](https://instagram.com/ekspertodniczego)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -37,9 +30,9 @@ patch of skin. How far a bond has been stretched at that instant.
 <td width="33%"><a href="reels/tear/"><img src="reels/tear/loop.webp" alt="Tear"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate · an organism's parts, organism removed</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
-<td><b><a href="reels/stripe/">Stripe</a></b><br><sub>Wetware · a pattern the tissue argues out</sub><br><br><i>Turing predicted chemicals.<br>These are cells.</i></td>
-<td><b><a href="reels/tear/">Tear</a></b><br><sub>Wetware · an animal that pulls itself apart</sub><br><br><i>It reproduces by<br>disagreeing with itself.</i></td>
+<td><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
+<td><b><a href="reels/stripe/">Stripe</a></b><br><sub>Wetware</sub><br><br><i>Turing predicted chemicals.<br>These are cells.</i></td>
+<td><b><a href="reels/tear/">Tear</a></b><br><sub>Wetware</sub><br><br><i>It reproduces by<br>disagreeing with itself.</i></td>
 </tr>
 <tr>
 <td><a href="reels/phyllotaxis/"><img src="reels/phyllotaxis/loop.webp" alt="Phyllotaxis"></a></td>
@@ -47,9 +40,9 @@ patch of skin. How far a bond has been stretched at that instant.
 <td><a href="reels/soliton/"><img src="reels/soliton/loop.webp" alt="Soliton"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware · a shoot apex placing organs</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
-<td><b><a href="reels/hydrocreatures/">Hydrocreatures</a></b><br><sub>Biomorph · three animals that are not animals</sub><br><br><i>Nothing here intends anything.<br>You do.</i></td>
-<td><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life · Lenia, and what one collision does</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
+<td><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
+<td><b><a href="reels/hydrocreatures/">Hydrocreatures</a></b><br><sub>Biomorph</sub><br><br><i>Nothing here intends anything.<br>You do.</i></td>
+<td><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
 </tr>
 </table>
 
@@ -70,8 +63,9 @@ Microtubules, kinesin, ATP. Beris–Edwards for the alignment tensor with one
 elastic constant, coupled to Stokes flow, with an active stress proportional to
 the alignment itself:
 
-$$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H
-\qquad\qquad \sigma^{\text{act}} = -\zeta\ Q$$
+$$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H$$
+
+$$\sigma^{\text{act}} = -\zeta\ Q$$
 
 That last term is the whole piece: **alignment is turned into flow, and the flow
 bends the alignment that produced it.** Above a threshold in activity — which
@@ -136,9 +130,9 @@ a width that no cell chose.
 every ventral cell walks on its own. The alignment comes from Ferrante et al.
 (2013): a cell is pulled by its neighbours and **turns toward the pull**.
 
-$$\dot{\mathbf{x}}_i = v_0\ \hat{n}_i + \mu\ \mathbf{F}_i
-\qquad\qquad
-\dot{\theta}_i = \beta\ \bigl(\mathbf{F}_i \cdot \hat{n}_i^{\perp}\bigr) + \eta_i$$
+$$\dot{\mathbf{x}}_i = v_0\ \hat{n}_i + \mu\ \mathbf{F}_i$$
+
+$$\dot{\theta}_i = \beta\ \bigl(\mathbf{F}_i \cdot \hat{n}_i^{\perp}\bigr) + \eta_i$$
 
 That rule alone lines thousands of cells up into one heading. But nothing
 coordinates them globally, so a large enough animal holds patches that agree
@@ -170,8 +164,9 @@ about the timing of division in a real *Trichoplax*.
 Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
 that minimises the inhibition of those already down:
 
-$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}
-\qquad\qquad r_j \propto \sqrt{\mathrm{age}_j}$$
+$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}$$
+
+$$r_j \propto \sqrt{\mathrm{age}_j}$$
 
 The radial law is not a choice of look. Organs are added at a constant rate, so
 holding areal density constant requires area to grow at a constant rate, which
@@ -204,10 +199,13 @@ densely and drawn as dots, at three settings of the same expression:
 
 $$k = 9\cos(ai)\sin(bi), \qquad e = 9\cos(ci)\sin(fi)$$
 
-$$d = \frac{\lVert (k,e) \rVert^{3}}{999} + 1.2 - \frac{\sin^{3}\left(\tfrac{t}{2}+m\right)}{4},
-\qquad p = d^{\ \sin\left(d^{2}-t+m\right)}$$
+$$d = \frac{\lVert (k,e) \rVert^{3}}{999} + 1.2 - \frac{\sin^{3}\left(\tfrac{t}{2}+m\right)}{4}$$
 
-$$C = \frac{d}{9} - \frac{t}{24} + m, \qquad x = 99\sin C + k\ p, \qquad y = 99\sin 4C + e\ p$$
+$$p = d^{\ \sin\left(d^{2}-t+m\right)}$$
+
+$$C = \frac{d}{9} - \frac{t}{24} + m$$
+
+$$x = 99\sin C + k\ p, \qquad y = 99\sin 4C + e\ p$$
 
 $d$ is the breath, $p$ the stretch, $C$ the lean that carries the figure along
 its path. The three creatures differ in four small integers $(a,b,c,f)$ and one
@@ -274,12 +272,14 @@ name. If you would rather use `pip install -r requirements.txt`, bring your own
 ffmpeg with libx264 and the scripts will find it.
 
 ```bash
-cd src/wetware   && python3 render.py --edition phyllotaxis --duration 8
-cd src/wetware   && python3 render.py --edition stripe --duration 8
-cd src/wetware   && python3 render.py --edition tear3 --palette prism --duration 10
-cd src/substrate && python3 render.py --edition defect
-cd src/alife     && python3 render.py --edition soliton --duration 10
-cd src/biomorph  && python3 hydrocreatures.py --variant neon --no-caption
+cd src/wetware
+python3 render.py --edition phyllotaxis --duration 8
+python3 render.py --edition stripe --duration 8
+python3 render.py --edition tear3 --palette prism --duration 10
+
+cd ../substrate && python3 render.py --edition defect
+cd ../alife && python3 render.py --edition soliton --duration 10
+cd ../biomorph && python3 hydrocreatures.py --variant neon --no-caption
 ```
 
 Those are the exact commands the published cuts were made with — the clip length
@@ -303,12 +303,12 @@ those claims apart is the discipline of the whole account: it is the difference
 between showing you biology and showing you a curve that flatters you into
 seeing biology.
 
-| Edition | The process is | The claim it makes |
-| --- | --- | --- |
-| **Wetware** | morphogenesis — how a body builds itself | this is biology, filmed as the algorithm it is |
-| **Substrate** | something a microscope can be pointed at, on a medium | the medium is the computer |
-| **Biomorph** | a parametric equation, not a simulation | it only *looks* alive — and that is the point |
-| **Artificial Life** | a rule invented inside a computer | being alive may be organisation, so it can be built out of numbers |
+| Edition | The process, and the claim it makes |
+| --- | --- |
+| **Wetware** | Morphogenesis — how a body builds itself. *This is biology, filmed as the algorithm it is.* |
+| **Substrate** | Something a microscope can be pointed at, on a medium. *The medium is the computer.* |
+| **Biomorph** | A parametric equation, not a simulation. *It only looks alive — and that is the point.* |
+| **Artificial Life** | A rule invented inside a computer. *Being alive may be organisation, so it can be built out of numbers.* |
 
 **Biomorph is the honest odd one out**, and *Hydrocreatures* is why it is worth
 keeping. Nothing emerges and no piece there claims anything is alive; the
