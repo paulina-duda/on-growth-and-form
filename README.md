@@ -1,14 +1,21 @@
-```
+<div align="center">
+<pre>
 █▀▀▀ █ ▄▀ █▀▀▀ █▀▀█ █▀▀▀ █▀▀█ ▀██▀ █▀▀█ █▀▀▄ █▄ █ ▀██▀ █▀▀▀ ▀▀██ █▀▀▀ █▀▀▀ █▀▀█
 █▀▀  ██   ▀▀▀█ █▀▀▀ █▀▀  ██▀▀  ██  █  █ █  █ █▀▄█  ██  █    ▄█▀  █▀▀  █ ▀█ █  █
 █▄▄▄ █ ▀▄ ▄▄▄█ █    █▄▄▄ █ ▀▄  ██  █▄▄█ █▄▄▀ █ ▀█ ▄██▄ █▄▄▄ █▄▄▄ █▄▄▄ █▄▄█ █▄▄█
 ───────────────────────────────────────────────────────────────────────────────
      B I O L O G Y    I S    T H E    O R I G I N A L    A L G O R I T H M
-```
+</pre>
+</div>
+
+
+<div align="center">
 
 [![Instagram](https://img.shields.io/badge/Instagram-@ekspertodniczego-E4405F?logo=instagram&logoColor=white)](https://instagram.com/ekspertodniczego)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Licence](https://img.shields.io/badge/renders-CC%20BY--NC--SA%204.0-lightgrey)](LICENSE)
+
+</div>
 
 Six processes, each one computing something — a form, a network, a decision
 about where to grow. The model runs, the run *is* the footage, and the colour is
@@ -19,22 +26,22 @@ patch of skin, how stretched a bond is at that instant.
 
 <table>
 <tr>
-<td width="33%"><a href="reels/phyllotaxis/"><img src="reels/phyllotaxis/loop.webp" alt="Phyllotaxis"></a></td>
+<td width="33%"><a href="reels/defect/"><img src="reels/defect/loop.webp" alt="Defect"></a></td>
 <td width="33%"><a href="reels/stripe/"><img src="reels/stripe/loop.webp" alt="Stripe"></a></td>
 <td width="33%"><a href="reels/tear/"><img src="reels/tear/loop.webp" alt="Tear"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware · a shoot apex placing organs</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
+<td><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate · an organism's parts, organism removed</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
 <td><b><a href="reels/stripe/">Stripe</a></b><br><sub>Wetware · a pattern the tissue argues out</sub><br><br><i>Turing predicted chemicals.<br>These are cells.</i></td>
 <td><b><a href="reels/tear/">Tear</a></b><br><sub>Wetware · an animal that pulls itself apart</sub><br><br><i>It reproduces by<br>disagreeing with itself.</i></td>
 </tr>
 <tr>
-<td><a href="reels/defect/"><img src="reels/defect/loop.webp" alt="Defect"></a></td>
+<td><a href="reels/phyllotaxis/"><img src="reels/phyllotaxis/loop.webp" alt="Phyllotaxis"></a></td>
 <td><a href="reels/hydrocreatures/"><img src="reels/hydrocreatures/loop.webp" alt="Hydrocreatures"></a></td>
 <td><a href="reels/soliton/"><img src="reels/soliton/loop.webp" alt="Soliton"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate · an organism's parts, organism removed</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
+<td><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware · a shoot apex placing organs</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
 <td><b><a href="reels/hydrocreatures/">Hydrocreatures</a></b><br><sub>Biomorph · three animals that are not animals</sub><br><br><i>Nothing here intends anything.<br>You do.</i></td>
 <td><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life · Lenia, and what one collision does</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
 </tr>
@@ -51,38 +58,41 @@ clip was actually run at. None of these rules contains the thing it produces:
 there is no angle in the phyllotaxis rule, no fold in the growth rule, no
 membrane, no stripe count and no spiral.
 
-### Phyllotaxis — inhibition-field organ placement
+### Defect — an active nematic with no cell around it
 
-Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
-that minimises the inhibition of those already down:
+Microtubules, kinesin, ATP. Beris–Edwards for the alignment tensor with one
+elastic constant, coupled to Stokes flow, with an active stress proportional to
+the alignment itself:
 
-$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}
-\qquad\qquad r_j \propto \sqrt{\mathrm{age}_j}$$
+$$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H
+\qquad\qquad \sigma^{\text{act}} = -\zeta\ Q$$
 
-The radial law is not a choice of look. Organs are added at a constant rate, so
-constant areal density requires area to grow at a constant rate, which gives
-$r\propto\sqrt{t}$ and makes the head **self-similar**. A self-similar head
-admits exactly one divergence angle for every organ it will ever place, so
-137.5° is fixed on the first few organs and cannot drift afterwards. The
-Fibonacci parastichy counts (8, 13, 21 near the core; 21, 34, 55 at the rim)
-follow from the rim flattening as the head widens.
+That last term is the whole piece: **alignment is turned into flow, and the flow
+bends the alignment that produced it.** There is no activity level at which an
+aligned film is stable against itself, so it buckles; a bend that keeps growing
+cannot stay a bend; and where the director breaks it turns by half a turn around
+a point. Halves cannot exist alone, so $\pm\tfrac{1}{2}$ defects are created in
+pairs and annihilate in pairs. The $+\tfrac{1}{2}$ has a comet head and swims,
+the $-\tfrac{1}{2}$ has three arms and mostly sits.
 
 | | |
 | --- | --- |
-| organs | 1,196 |
-| inhibition sum | 60 nearest-youngest only — the $d^{-2}$ term puts everything older out of range |
-| candidate angles | re-offset each step by a uniform fraction of their own spacing, or the result locks to the sampling grid rather than to the rule |
-| colour | age, `APEX` ramp — youngest at the centre, so the bright end is the core |
+| defects | 0 → 528 over the clip |
+| charge balance | 232 of one sign against 234 of the other, counted well inside the drop |
+| steady state | none — a fixed rate of tearing for as long as there is ATP |
+
+Sanchez et al. (2012).
 
 ### Stripe — cell-level Turing, short-range support and long-range suppression
 
 Nakamasu et al. (2009), whose interaction was measured by laser-ablating cells
 one at a time. Two Gaussians on the signed cell field:
 
-$$D  =  G_{\sigma_{\text{near}}} * f  -  w\ \bigl(G_{\sigma_{\text{far}}} * f\bigr)
-\qquad\qquad f=\begin{cases}+1 & \text{melanophore}\\[2pt] -1 & \text{xanthophore}\end{cases}$$
+$$D  =  G_{\sigma_{\text{near}}} * f  -  w\ \bigl(G_{\sigma_{\text{far}}} * f\bigr)$$
 
-A cell adopts $\operatorname{sign}(D)$ with probability $\lambda$ per step. This
+where $f = +1$ on a melanophore and $f = -1$ on a xanthophore.
+
+A cell adopts $\mathrm{sign}(D)$ with probability $\lambda$ per step. This
 is Turing's shape with **whole cells standing where the chemicals were** — the
 morphogens are the pigment cells themselves, each reading its neighbourhood and
 changing type when the answer is wrong.
@@ -130,30 +140,28 @@ first quarter and nothing tore after: 85.2% of the change, then 0.0%.
 | units | one cell spacing = 1; dish radius = 93 spacings |
 | colour | animal identity — a tear is one colour becoming two; strain rides in the brightness |
 
-### Defect — an active nematic with no cell around it
+### Phyllotaxis — inhibition-field organ placement
 
-Microtubules, kinesin, ATP. Beris–Edwards for the alignment tensor with one
-elastic constant, coupled to Stokes flow, with an active stress proportional to
-the alignment itself:
+Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
+that minimises the inhibition of those already down:
 
-$$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H
-\qquad\qquad \sigma^{\text{act}} = -\zeta\ Q$$
+$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}
+\qquad\qquad r_j \propto \sqrt{\mathrm{age}_j}$$
 
-That last term is the whole piece: **alignment is turned into flow, and the flow
-bends the alignment that produced it.** There is no activity level at which an
-aligned film is stable against itself, so it buckles; a bend that keeps growing
-cannot stay a bend; and where the director breaks it turns by half a turn around
-a point. Halves cannot exist alone, so $\pm\tfrac{1}{2}$ defects are created in
-pairs and annihilate in pairs. The $+\tfrac{1}{2}$ has a comet head and swims,
-the $-\tfrac{1}{2}$ has three arms and mostly sits.
+The radial law is not a choice of look. Organs are added at a constant rate, so
+constant areal density requires area to grow at a constant rate, which gives
+$r\propto\sqrt{t}$ and makes the head **self-similar**. A self-similar head
+admits exactly one divergence angle for every organ it will ever place, so
+137.5° is fixed on the first few organs and cannot drift afterwards. The
+Fibonacci parastichy counts (8, 13, 21 near the core; 21, 34, 55 at the rim)
+follow from the rim flattening as the head widens.
 
 | | |
 | --- | --- |
-| defects | 0 → 528 over the clip |
-| charge balance | 232 of one sign against 234 of the other, counted well inside the drop |
-| steady state | none — a fixed rate of tearing for as long as there is ATP |
-
-Sanchez et al. (2012).
+| organs | 1,196 |
+| inhibition sum | 60 nearest-youngest only — the $d^{-2}$ term puts everything older out of range |
+| candidate angles | re-offset each step by a uniform fraction of their own spacing, or the result locks to the sampling grid rather than to the rule |
+| colour | age, `APEX` ramp — youngest at the centre, so the bright end is the core |
 
 ### Hydrocreatures — three animals from one closed curve
 
