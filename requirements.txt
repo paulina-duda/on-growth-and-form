@@ -1,2 +1,6 @@
+# Also needs an ffmpeg built with libx264. conda-forge's default is the LGPL
+# build and carries only libopenh264, which fails partway through an encode --
+# environment.yml asks for the GPL build by name.
 numpy>=1.26
+scipy>=1.11
 pillow>=10.0

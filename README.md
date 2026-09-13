@@ -13,14 +13,20 @@
 
 [![Instagram](https://img.shields.io/badge/Instagram-@ekspertodniczego-E4405F?logo=instagram&logoColor=white)](https://instagram.com/ekspertodniczego)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Licence](https://img.shields.io/badge/renders-CC%20BY--NC--SA%204.0-lightgrey)](LICENSE)
+[![Code](https://img.shields.io/badge/code-PolyForm%20Noncommercial%201.0.0-4c6ef5)](LICENSE)
+[![Renders](https://img.shields.io/badge/renders-%C2%A9%20All%20Rights%20Reserved-lightgrey)](LICENSE)
 
 </div>
 
-Six processes, each one computing something — a form, a network, a decision
-about where to grow. The model runs, the run *is* the footage, and the colour is
-a quantity the model carries: how old an organ is, which of two cells won that
-patch of skin, how stretched a bond is at that instant.
+Biological form is not drawn. It is computed — by tissue, by a growing tip, by
+a sheet of filaments with no cell around them — and these are films of that
+computation happening.
+
+Nothing here illustrates a finished result. A model runs and the run is the
+footage. Colour is never decoration either: it carries a quantity the model
+already holds, so what you are looking at is the state of the simulation rather
+than a reading of it. How old an organ is. Which of two cell states holds a
+patch of skin. How far a bond has been stretched at that instant.
 
 ---
 
@@ -60,6 +66,8 @@ membrane, no stripe count and no spiral.
 
 ### Defect — an active nematic with no cell around it
 
+**Code: [`src/substrate/`](src/substrate/) — `render.py --edition defect`**
+
 Microtubules, kinesin, ATP. Beris–Edwards for the alignment tensor with one
 elastic constant, coupled to Stokes flow, with an active stress proportional to
 the alignment itself:
@@ -68,10 +76,10 @@ $$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H
 \qquad\qquad \sigma^{\text{act}} = -\zeta\ Q$$
 
 That last term is the whole piece: **alignment is turned into flow, and the flow
-bends the alignment that produced it.** There is no activity level at which an
-aligned film is stable against itself, so it buckles; a bend that keeps growing
-cannot stay a bend; and where the director breaks it turns by half a turn around
-a point. Halves cannot exist alone, so $\pm\tfrac{1}{2}$ defects are created in
+bends the alignment that produced it.** Above a threshold in activity — which
+this model sits well past — a uniformly aligned film is unstable against its own
+flow, so it buckles; a bend that keeps growing cannot stay a bend; and where the
+director breaks it turns by half a turn around a point. Halves cannot exist alone, so $\pm\tfrac{1}{2}$ defects are created in
 pairs and annihilate in pairs. The $+\tfrac{1}{2}$ has a comet head and swims,
 the $-\tfrac{1}{2}$ has three arms and mostly sits.
 
@@ -85,17 +93,29 @@ Sanchez et al. (2012).
 
 ### Stripe — cell-level Turing, short-range support and long-range suppression
 
+**Code: [`src/wetware/`](src/wetware/) — `render.py --edition stripe`**
+
 Nakamasu et al. (2009), whose interaction was measured by laser-ablating cells
 one at a time. Two Gaussians on the signed cell field:
 
 $$D  =  G_{\sigma_{\text{near}}} * f  -  w\ \bigl(G_{\sigma_{\text{far}}} * f\bigr)$$
 
-where $f = +1$ on a melanophore and $f = -1$ on a xanthophore.
+where $f = +1$ where the black-pigment state holds a site and $f = -1$ where the
+yellow one does. A site adopts $\mathrm{sign}(D)$ with probability $\lambda$ per
+step.
 
-A cell adopts $\mathrm{sign}(D)$ with probability $\lambda$ per step. This
-is Turing's shape with **whole cells standing where the chemicals were** — the
-morphogens are the pigment cells themselves, each reading its neighbourhood and
-changing type when the answer is wrong.
+This is Turing's shape with **cells standing where the chemicals were**: the
+short- and long-range terms are carried by pigment cells reading their own
+neighbourhood, not by two diffusing substances. Nakamasu and colleagues measured
+that interaction by ablating cells one at a time and watching what grew back.
+
+**Two liberties, both the model's and not the fish's.** A site here is a binary
+state that flips, which stands in for a much slower biological story — the real
+tissue rearranges through cell death, division, migration and differentiation of
+precursors, and a melanophore does not simply become a xanthophore. And the flip
+is stochastic per step, which is a convenience for making the border legible
+frame to frame rather than a measured rate. What survives the abstraction is the
+interaction's *shape*, which is the part the pattern depends on.
 
 The two ranges are the reach of one cell's processes, so they are fixed while
 the skin keeps widening. A stripe therefore has a width it wants; existing
@@ -112,6 +132,8 @@ a width that no cell chose.
 
 ### Tear — motility-induced fracture in a placozoan
 
+**Code: [`src/wetware/`](src/wetware/) — `render.py --edition tear3 --palette prism --duration 10`**
+
 *Trichoplax adhaerens* has no nerves and no muscle; it crawls on cilia, and
 every ventral cell walks on its own. The alignment comes from Ferrante et al.
 (2013): a cell is pulled by its neighbours and **turns toward the pull**.
@@ -125,12 +147,15 @@ coordinates them globally, so a large enough animal holds patches that agree
 internally and disagree with each other, and the tissue between them stretches.
 Bonds past a strain threshold yield; bonds re-form between nearby cells of the
 same animal, so the sheet tears rather than shatters. Prakash, Bull & Prakash
-(2022) filmed exactly this.
+(2021) filmed tissue fracturing under its own crawling.
 
-**Growth is the clock.** Cells divide in place, so the halves grow back to the
-size at which they tear again. Without division the process is a relaxation —
-measured at the gate, sixteen animals shattered into thirty-seven pieces in the
-first quarter and nothing tore after: 85.2% of the change, then 0.0%.
+**In this model, growth acts as the reset clock.** Cells divide in place, so a
+half grows back to the size at which it tears again, and the piece keeps
+producing events instead of settling. That is an implementation choice, made
+because without it the run is a one-off relaxation: measured before building,
+sixteen animals shattered into thirty-seven pieces in the first quarter and
+nothing tore afterwards — 85.2% of the change, then 0.0%. It is not a claim
+about the timing of division in a real *Trichoplax*.
 
 | | |
 | --- | --- |
@@ -142,7 +167,7 @@ first quarter and nothing tore after: 85.2% of the change, then 0.0%.
 
 ### Phyllotaxis — inhibition-field organ placement
 
-**Code: [`src/phyllotaxis/`](src/phyllotaxis/)**
+**Code: [`src/wetware/`](src/wetware/) — `render.py --edition phyllotaxis`**
 
 Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
 that minimises the inhibition of those already down:
@@ -151,10 +176,17 @@ $$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_
 \qquad\qquad r_j \propto \sqrt{\mathrm{age}_j}$$
 
 The radial law is not a choice of look. Organs are added at a constant rate, so
-constant areal density requires area to grow at a constant rate, which gives
-$r\propto\sqrt{t}$ and makes the head **self-similar**. A self-similar head
-admits exactly one divergence angle for every organ it will ever place, so
-137.5° is fixed on the first few organs and cannot drift afterwards. The
+holding areal density constant requires area to grow at a constant rate, which
+gives $r\propto\sqrt{t}$ and makes the head geometrically **self-similar**.
+
+**No angle appears anywhere in the rule.** What the divergence settles to is a
+property of the parameter regime, not a theorem: at the apex size used here the
+placement locks into an ordered window and the measured median divergence comes
+out at 137.37°, within a seventh of a degree of the golden angle. Other apex
+sizes lock onto different fractions — near five thirteenths of a turn at one
+setting, which throws the organs into thirteen separate arms — and above about
+1.4 spacings the placement stops settling at all. Which window a setting falls
+in can only be found by running it and measuring, which is what was done. The
 Fibonacci parastichy counts (8, 13, 21 near the core; 21, 34, 55 at the rim)
 follow from the rim flattening as the head widens.
 
@@ -167,7 +199,7 @@ follow from the rim flattening as the head widens.
 
 ### Hydrocreatures — three animals from one closed curve
 
-**Code: [`src/hydrocreatures/`](src/hydrocreatures/)**
+**Code: [`src/biomorph/`](src/biomorph/) — `hydrocreatures.py --variant neon --no-caption`**
 
 Nothing is simulated here and nothing emerges. One parametric curve, sampled
 densely and drawn as dots, at three settings of the same expression:
@@ -197,6 +229,8 @@ average and reads badly on screen. Eleven survived out of 1,260.
 
 ### Soliton — Lenia
 
+**Code: [`src/alife/`](src/alife/) — `render.py --edition soliton --duration 10`**
+
 Conway's Life with four things made continuous: a real number instead of a bit,
 a smooth ring kernel $K$ instead of eight neighbours, one smooth growth curve
 $G$ instead of birth and survival integers, and a timestep that moves the field
@@ -222,23 +256,45 @@ Chan (2019).
 
 ---
 
-## Source
+## Run them yourself
 
-Two of the six are here in full, runnable, under [`src/`](src/) — one
-simulation and one closed form, which is the account's argument in two files:
+All six are here in full under [`src/`](src/), and every one of them reproduces
+its published clip.
 
 ```bash
-pip install numpy pillow          # plus an ffmpeg built with libx264
-cd src/phyllotaxis && python3 phyllotaxis.py --preview
-cd src/hydrocreatures && python3 hydrocreatures.py --variant neon --no-caption
+git clone https://github.com/paulina-duda/on-growth-and-form.git
+cd on-growth-and-form
+
+conda env create -f environment.yml
+conda activate on-growth-and-form
 ```
 
-Both were checked against what was published: the still each one writes is
-**pixel-identical to the shipped cut, zero pixels differing.** The parameters
-are the ones the clips were run at, and the comments explaining why a number is
-what it is are the ones written when it cost something to find out.
+Conda rather than `pip` for one reason: **ffmpeg**. conda-forge's default build
+is the LGPL one, which carries only libopenh264 — it advertises H.264 and then
+fails partway through an encode. `environment.yml` asks for the GPL build by
+name. If you would rather use `pip install -r requirements.txt`, bring your own
+ffmpeg with libx264 and the scripts will find it.
 
-The other four run on the same drawing module and are not extracted yet.
+```bash
+cd src/wetware   && python3 render.py --edition phyllotaxis --duration 8
+cd src/wetware   && python3 render.py --edition stripe --duration 8
+cd src/wetware   && python3 render.py --edition tear3 --palette prism --duration 10
+cd src/substrate && python3 render.py --edition defect
+cd src/alife     && python3 render.py --edition soliton --duration 10
+cd src/biomorph  && python3 hydrocreatures.py --variant neon --no-caption
+```
+
+Those are the exact commands the published cuts were made with — the clip length
+is a per-reel decision, so it is on the command line rather than in a default.
+
+Clips and their cover stills land in `out/`. Add `--preview` to write the still
+and stop, which takes about a second.
+
+**Every one was checked against what was published**, not by eye: each writes a
+cover frame that is pixel-identical to the shipped cut, zero pixels differing.
+The parameters are the ones the clips were run at, and the comments explaining
+why a number is what it is are the ones written when it cost something to find
+out.
 
 ---
 
@@ -277,12 +333,13 @@ caption:
 
 - **Douady & Couder, 1992** — the shoot apex as a physical system — *Phyllotaxis*
 - **Nakamasu et al., 2009** — the zebrafish interaction, measured by laser ablation — *Stripe*
-- **Ferrante et al., 2013** and **Prakash, Bull & Prakash, 2022** — alignment by pulling, and motility-induced fracture — *Tear*
+- **Ferrante et al., 2013** and **Prakash, Bull & Prakash, 2021** — alignment by pulling, and motility-induced fracture — *Tear*
 - **Sanchez et al., 2012** — kinesin walking on microtubules — *Defect*
 - **Bert Wang-Chak Chan, 2019** — Lenia — *Soliton*
 
-*Hydrocreatures* rests on no paper. It is a closed-form curve and a search over
-harmonics, and it is mine.
+*Hydrocreatures* rests on no paper. Inspired by the generative sketches of
+[**@yuruyurau**](https://x.com/yuruyurau) — the implementation, harmonic search,
+composition and rendering here are my own. No code of his was used.
 
 ---
 
@@ -297,8 +354,20 @@ animal falls out.
 
 ---
 
+## Licensing
+
+- **Code** — [PolyForm Noncommercial 1.0.0](LICENSE). Free for any
+  noncommercial purpose; **commercial use requires separate written permission.**
+- **Renders, stills, animations and text** — © 2026 Paulina Duda.
+  **All Rights Reserved.** Not open-licensed: ask before republishing,
+  redistributing, training on, or building from them.
+- **Vendored typefaces** — IBM Plex Mono under the SIL Open Font License 1.1,
+  see [`src/fonts/NOTICE.md`](src/fonts/NOTICE.md).
+
+Third-party inspirations and the scientific sources behind each model are
+credited above and on the individual piece pages.
+
+---
+
 Paulina Duda — bioinformatician. The reels go out as
 [@ekspertodniczego](https://instagram.com/ekspertodniczego).
-
-**Licence.** Renders and copy: [CC BY-NC-SA 4.0](LICENSE). Attribute
-@ekspertodniczego.

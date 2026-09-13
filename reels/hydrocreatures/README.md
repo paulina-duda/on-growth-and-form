@@ -42,6 +42,8 @@ a purpose.
 Nothing grows, nothing senses, nothing decides. Whatever you caught them wanting
 is yours.
 
-<sub>No external model — the curve and the harmonic search are this project's
-own. 1080 × 1920, 8 s.
+<sub>Inspired by the generative sketches of
+[@yuruyurau](https://x.com/yuruyurau). The implementation, harmonic search,
+composition and rendering here are my own — no code of his was used, and he is
+not an author of this. 1080 × 1920, 8 s.
 [On Instagram →](https://instagram.com/ekspertodniczego)</sub>

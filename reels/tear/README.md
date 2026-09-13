@@ -27,7 +27,7 @@ other — and the tissue between those patches stretches.
 Bonds past a strain threshold give way. Bonds re-form between nearby cells of
 the same animal, so the sheet **yields instead of shattering**, and an animal
 stretched far enough comes apart in two. That is how this animal reproduces, and
-Prakash, Bull & Prakash filmed it in 2022: motility-induced fracture, a body
+Prakash, Bull & Prakash filmed it in 2021: motility-induced fracture, a body
 torn by its own crawling.
 
 Growth is the clock. Cells divide in place, so each half grows back to the size
@@ -46,6 +46,7 @@ walk · turn to the pull · stretch · give
 motility-induced fracture, Prakash 2022
 ```
 
-<sub>Ferrante et al. 2013 for the coupling, Prakash et al. 2022 for the
-fracture; cited in frame. 1080 × 1920, 10 s.
+<sub>Ferrante et al. 2013 for the coupling, Prakash et al. 2021 for the
+fracture. The data block above is quoted from the frame as rendered, and the
+year printed there is wrong. 1080 × 1920, 10 s.
 [On Instagram →](https://instagram.com/ekspertodniczego)</sub>

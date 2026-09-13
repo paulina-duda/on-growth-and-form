@@ -1,0 +1,12 @@
+# conda-forge's default ffmpeg is the LGPL build and carries only libopenh264,
+# which advertises H.264 and then fails partway through an encode. The `gpl`
+# build string is what gets you libx264, and it has to be asked for by name.
+name: on-growth-and-form
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.26
+  - scipy>=1.11
+  - pillow>=10.0
+  - ffmpeg=*=gpl*
