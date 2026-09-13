@@ -201,13 +201,19 @@ class Stripe:
 
     A zebrafish stripe is not two chemicals racing each other across a sheet.
     It is two kinds of cell -- black melanophores and yellow xanthophores --
-    each one reading how many of the other kind are nearby and, if the answer
-    is wrong, becoming the other kind. The interaction has the shape Turing
-    needed: a cell is supported by its own kind close in and suppressed by its
-    own kind further out, which is short-range activation and long-range
-    inhibition with whole cells standing where the chemicals were. Nakamasu
-    and colleagues measured the two ranges by killing cells with a laser and
-    watching what grew back.
+    each one responding to how many of the other kind are nearby. The
+    interaction has the shape Turing needed: a cell is supported by its own kind
+    close in and suppressed by its own kind further out, which is short-range
+    activation and long-range inhibition with cells standing where the chemicals
+    were. Nakamasu and colleagues measured the two ranges by killing cells with
+    a laser and watching what grew back.
+
+    **The binary state and the flip are this model's, not the fish's.** A site
+    here holds one of two values and switches stochastically once per step,
+    which stands in for a far slower business of cell death, division, migration
+    and the differentiation of precursors -- a melanophore does not simply
+    become a xanthophore. What survives the abstraction is the shape of the
+    interaction, which is what the pattern depends on.
 
     So the pattern is computed by the tissue rather than painted onto it, and
     the machinery is visible: every pixel of a stripe is an individual animal

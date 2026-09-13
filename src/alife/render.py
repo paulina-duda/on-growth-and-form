@@ -14,9 +14,10 @@ held top to bottom by a soft spring, which keeps the black the title and the
 hook are set on -- a swarm that fills the frame corner to corner leaves the
 typography nothing to sit on.
 
-**Eight seconds, and the clip is a loop**, as everywhere else: it opens on the
-organised frame, cuts to the gas it started as, and assembles back into exactly
-the frame it opened on.
+**The clip is a loop**, as everywhere else: it opens on the organised frame,
+cuts to the gas it started as, and assembles back into exactly the frame it
+opened on. Length is a per-reel decision and lives on the command line -- the
+published `soliton` is ten seconds, not the eight most pieces take.
 
 **This one is paced by the clock, and that is the exception.** Everywhere else
 in this project the frames are placed at equal intervals of a measured
@@ -24,8 +25,8 @@ progress, because the process accelerates or stalls. Here the population
 condenses out of the gas in the first second and then simply swims, at a speed
 the friction fixes, so equal steps of the clock already are equal steps of the
 process -- and a progress schedule built on how much structure there is would
-spend seven of the eight seconds sitting still on the flat part of that curve,
-which is to say on the part where all the swimming happens.
+spend almost the whole clip sitting still on the flat part of that curve, which
+is to say on the part where all the swimming happens.
 
 **It ends at the top of the population, not at the end of the run.** Left
 running, the swimmers meet, merge and thin out, and the frame slowly empties --

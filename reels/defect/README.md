@@ -15,9 +15,9 @@ The filaments line up with their neighbours — that is the whole of what
 neighbours slide past each other, and a row of filaments sliding along its own
 direction pushes fluid along that direction. **Alignment is turned into flow.**
 
-Then the flow bends the alignment that made it. There is no activity level at
-which an aligned film is stable against itself, so it always buckles, and a bend
-that keeps growing cannot stay a bend. Where the alignment breaks, the direction
+Then the flow bends the alignment that made it. Above a threshold in activity —
+and this film is run well past it — a uniformly aligned sheet is unstable against
+its own flow, so it buckles, and a bend that keeps growing cannot stay a bend. Where the alignment breaks, the direction
 turns by half a turn around a point: a topological defect, +½ or −½. Halves
 cannot exist alone, so they arrive in pairs. The +½ has a head like a comet and
 swims; the −½ has three arms and mostly sits. When the two meet they annihilate

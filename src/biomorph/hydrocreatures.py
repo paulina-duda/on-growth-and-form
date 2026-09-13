@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Three hydrocreatures that swim on their own equation, and a loop that closes.
 
-The yuruyurau compact procedure: one closed curve, swept densely and drawn as
+Inspired by the generative sketches of @yuruyurau, who posts them on X at
+x.com/yuruyurau. None of his code was used: the curve, the harmonic search, the
+loop-closure work, the composition and the rendering here are mine. What is
+borrowed is the idea of a single closed curve swept densely and drawn as
 strokes. This supersedes an earlier `hydrocreatures` cut -- deleted rather than
 kept, because nothing in it survived unchanged -- and it differs from that cut
 in the two things the source sketch is actually about:

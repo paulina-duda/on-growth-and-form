@@ -14,9 +14,16 @@ enough to make stripes, and for a long time the zebrafish was the textbook case.
 Then the cells were killed off one at a time with a laser, and what grew back
 gave the interaction away. The shape Turing needed was there — a cell supports
 its own kind close in and suppresses it further out — but **the morphogens were
-not chemicals. They were whole cells**: black melanophores and yellow
-xanthophores, each reading how many of the other kind are nearby and, if the
-answer is wrong, becoming the other kind.
+not chemicals. They were whole cells**: the short- and long-range terms are
+carried by the pigment cells themselves — black melanophores and yellow
+xanthophores — each responding to how many of the other kind are nearby.
+
+**The binary flip is the model's, not the fish's.** A site here holds one of two
+states and switches, stochastically, once per step. That stands in for a much
+slower biological story: real tissue rearranges through cell death, division,
+migration and the differentiation of precursors, and a melanophore does not
+simply turn into a xanthophore. What survives the abstraction is the *shape* of
+the interaction, which is the part the pattern depends on.
 
 ```
 drive = G(σ_near) * f  −  w · G(σ_far) * f        f = +1 black, −1 yellow

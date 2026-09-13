@@ -335,6 +335,9 @@ caption:
 - **Sanchez et al., 2012** — kinesin walking on microtubules — *Defect*
 - **Bert Wang-Chak Chan, 2019** — Lenia — *Soliton*
 
+Full citations with DOIs are in **[REFERENCES.md](REFERENCES.md)**, each one
+checked against Crossref rather than typed from memory.
+
 *Hydrocreatures* rests on no paper. Inspired by the generative sketches of
 **@yuruyurau**, who posts them on X: [x.com/yuruyurau](https://x.com/yuruyurau).
 The implementation, harmonic search, composition and rendering here are my own —

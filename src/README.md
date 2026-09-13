@@ -40,7 +40,8 @@ cd wetware && python3 render.py --edition phyllotaxis --duration 8 --preview
 ```
 
 `--preview` writes the cover still and stops, which takes about a second;
-without it you get the mp4 and its cover in `../out/`.
+without it you get the mp4 and its cover. Both land in the `out/` directory at
+the top of the repository, whichever edition you ran.
 
 **ffmpeg matters.** conda-forge's default build is the LGPL one and carries only
 libopenh264, which advertises H.264 and then fails at runtime. `environment.yml`
