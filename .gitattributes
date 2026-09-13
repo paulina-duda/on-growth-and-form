@@ -1,0 +1,3 @@
+# Vendored typefaces are not this project's source.
+shared/fonts/**  linguist-vendored
+*.webp           binary

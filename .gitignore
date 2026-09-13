@@ -1,0 +1,9 @@
+# Rendered video never enters this repository — it lives on the account.
+*.mp4
+*.mov
+*.gif
+
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
