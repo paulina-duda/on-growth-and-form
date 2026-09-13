@@ -21,6 +21,8 @@ patch of skin. How far a bond has been stretched at that instant.
 
 ---
 
+<div align="center">
+
 <table>
 <tr>
 <td width="50%" align="center"><a href="reels/defect/"><img src="reels/defect/loop.webp" alt="Defect" width="260"></a></td>
@@ -47,6 +49,8 @@ patch of skin. How far a bond has been stretched at that instant.
 <td width="50%" align="center"><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
 </tr>
 </table>
+
+</div>
 
 **The full cuts are on [Instagram](https://instagram.com/ekspertodniczego).**
 
