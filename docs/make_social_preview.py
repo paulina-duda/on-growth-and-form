@@ -43,14 +43,18 @@ TILE = (300, 533)
 FEATHER = 38
 FLOOR = 14
 
-# Three of the six on the front page, chosen for contrast: a spiral, a solid
-# disc and a scattered field, in violet, gold and every colour at once. The card
-# is used in the README as well as by GitHub, so it shows pieces the page
-# actually contains rather than advertising work that is not there.
+# Paulina's pick: a drawn shell, a confined maze and a pigment pattern, which
+# read cold as three different kinds of picture.
+#
+# Two of the three are pieces of the account rather than of this repository --
+# the card represents @ekspertodniczego, not the six reels published here. Their
+# cover stills are not produced by anything under `src/`, so to re-run this you
+# need `ammonite` and `gyrus` dropped into `../out/` alongside the one piece
+# that is here.
 PICKS = [
-    "phyllotaxis_primordia_apex_1080x1920_8s_30fps_hook_plex.cover.png",
+    "growth-form_ammonite-logspiral-solid_1080x1920_10s_30fps_cover.png",
+    "gyrus_differential-growth_venom_1080x1920_8s_30fps_hook_plex_v2.cover.png",
     "stripe_pigment-cells_skin_1080x1920_8s_30fps_bloom_hook_plex.cover.png",
-    "tear_placozoan-spread_prism_1080x1920_10s_30fps_bloom_hook_plex.cover.png",
 ]
 
 

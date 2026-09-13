@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="docs/banner.svg" alt="EKSPERTODNICZEGO" width="640">
-
-**Biology is the original algorithm**
+<img src="docs/banner.svg" alt="EKSPERTODNICZEGO — biology is the original algorithm" width="640">
 
 [![Instagram](https://img.shields.io/badge/Instagram-@ekspertodniczego-E4405F?logo=instagram&logoColor=white)](https://instagram.com/ekspertodniczego)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -25,24 +23,24 @@ patch of skin. How far a bond has been stretched at that instant.
 
 <table>
 <tr>
-<td width="33%"><a href="reels/defect/"><img src="reels/defect/loop.webp" alt="Defect"></a></td>
-<td width="33%"><a href="reels/stripe/"><img src="reels/stripe/loop.webp" alt="Stripe"></a></td>
-<td width="33%"><a href="reels/tear/"><img src="reels/tear/loop.webp" alt="Tear"></a></td>
+<td width="33.33%"><a href="reels/defect/"><img src="reels/defect/loop.webp" alt="Defect" width="100%"></a></td>
+<td width="33.33%"><a href="reels/stripe/"><img src="reels/stripe/loop.webp" alt="Stripe" width="100%"></a></td>
+<td width="33.33%"><a href="reels/tear/"><img src="reels/tear/loop.webp" alt="Tear" width="100%"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
-<td><b><a href="reels/stripe/">Stripe</a></b><br><sub>Wetware</sub><br><br><i>Turing predicted chemicals.<br>These are cells.</i></td>
-<td><b><a href="reels/tear/">Tear</a></b><br><sub>Wetware</sub><br><br><i>It reproduces by<br>disagreeing with itself.</i></td>
+<td width="33.33%"><b><a href="reels/defect/">Defect</a></b><br><sub>Substrate</sub><br><br><i>Nothing here is alive.<br>It still cannot rest.</i></td>
+<td width="33.33%"><b><a href="reels/stripe/">Stripe</a></b><br><sub>Wetware</sub><br><br><i>Turing predicted chemicals.<br>These are cells.</i></td>
+<td width="33.33%"><b><a href="reels/tear/">Tear</a></b><br><sub>Wetware</sub><br><br><i>It reproduces by<br>disagreeing with itself.</i></td>
 </tr>
 <tr>
-<td><a href="reels/phyllotaxis/"><img src="reels/phyllotaxis/loop.webp" alt="Phyllotaxis"></a></td>
-<td><a href="reels/hydrocreatures/"><img src="reels/hydrocreatures/loop.webp" alt="Hydrocreatures"></a></td>
-<td><a href="reels/soliton/"><img src="reels/soliton/loop.webp" alt="Soliton"></a></td>
+<td width="33.33%"><a href="reels/phyllotaxis/"><img src="reels/phyllotaxis/loop.webp" alt="Phyllotaxis" width="100%"></a></td>
+<td width="33.33%"><a href="reels/hydrocreatures/"><img src="reels/hydrocreatures/loop.webp" alt="Hydrocreatures" width="100%"></a></td>
+<td width="33.33%"><a href="reels/soliton/"><img src="reels/soliton/loop.webp" alt="Soliton" width="100%"></a></td>
 </tr>
 <tr valign="top">
-<td><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
-<td><b><a href="reels/hydrocreatures/">Hydrocreatures</a></b><br><sub>Biomorph</sub><br><br><i>Nothing here intends anything.<br>You do.</i></td>
-<td><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
+<td width="33.33%"><b><a href="reels/phyllotaxis/">Phyllotaxis</a></b><br><sub>Wetware</sub><br><br><i>The plant is not counting.<br>You are.</i></td>
+<td width="33.33%"><b><a href="reels/hydrocreatures/">Hydrocreatures</a></b><br><sub>Biomorph</sub><br><br><i>Nothing here intends anything.<br>You do.</i></td>
+<td width="33.33%"><b><a href="reels/soliton/">Soliton</a></b><br><sub>Artificial Life</sub><br><br><i>Every one of these<br>was stable on its own.</i></td>
 </tr>
 </table>
 
