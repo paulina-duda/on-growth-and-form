@@ -142,6 +142,8 @@ first quarter and nothing tore after: 85.2% of the change, then 0.0%.
 
 ### Phyllotaxis — inhibition-field organ placement
 
+**Code: [`src/phyllotaxis/`](src/phyllotaxis/)**
+
 Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
 that minimises the inhibition of those already down:
 
@@ -164,6 +166,8 @@ follow from the rim flattening as the head widens.
 | colour | age, `APEX` ramp — youngest at the centre, so the bright end is the core |
 
 ### Hydrocreatures — three animals from one closed curve
+
+**Code: [`src/hydrocreatures/`](src/hydrocreatures/)**
 
 Nothing is simulated here and nothing emerges. One parametric curve, sampled
 densely and drawn as dots, at three settings of the same expression:
@@ -215,6 +219,26 @@ for.
 | field | 12 copies of one creature, doubly periodic, simulated at half resolution and doubled on output |
 
 Chan (2019).
+
+---
+
+## Source
+
+Two of the six are here in full, runnable, under [`src/`](src/) — one
+simulation and one closed form, which is the account's argument in two files:
+
+```bash
+pip install numpy pillow          # plus an ffmpeg built with libx264
+cd src/phyllotaxis && python3 phyllotaxis.py --preview
+cd src/hydrocreatures && python3 hydrocreatures.py --variant neon --no-caption
+```
+
+Both were checked against what was published: the still each one writes is
+**pixel-identical to the shipped cut, zero pixels differing.** The parameters
+are the ones the clips were run at, and the comments explaining why a number is
+what it is are the ones written when it cost something to find out.
+
+The other four run on the same drawing module and are not extracted yet.
 
 ---
 
