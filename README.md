@@ -56,7 +56,7 @@ membrane, no stripe count and no spiral.
 Douady & Couder (1992). One organ per plastochrone, placed at the rim angle
 that minimises the inhibition of those already down:
 
-$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\,\in\,\mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}
+$$\theta_{n+1}=\arg\min_{\theta}\ \sum_{j\ \in\ \mathcal{N}} \lVert x(\theta)-p_j \rVert^{-2}
 \qquad\qquad r_j \propto \sqrt{\mathrm{age}_j}$$
 
 The radial law is not a choice of look. Organs are added at a constant rate, so
@@ -79,7 +79,7 @@ follow from the rim flattening as the head widens.
 Nakamasu et al. (2009), whose interaction was measured by laser-ablating cells
 one at a time. Two Gaussians on the signed cell field:
 
-$$D \;=\; G_{\sigma_{\text{near}}} * f \;-\; w\,\bigl(G_{\sigma_{\text{far}}} * f\bigr)
+$$D  =  G_{\sigma_{\text{near}}} * f  -  w\ \bigl(G_{\sigma_{\text{far}}} * f\bigr)
 \qquad\qquad f=\begin{cases}+1 & \text{melanophore}\\[2pt] -1 & \text{xanthophore}\end{cases}$$
 
 A cell adopts $\operatorname{sign}(D)$ with probability $\lambda$ per step. This
@@ -106,9 +106,9 @@ a width that no cell chose.
 every ventral cell walks on its own. The alignment comes from Ferrante et al.
 (2013): a cell is pulled by its neighbours and **turns toward the pull**.
 
-$$\dot{\mathbf{x}}_i = v_0\,\hat{n}_i + \mu\,\mathbf{F}_i
+$$\dot{\mathbf{x}}_i = v_0\ \hat{n}_i + \mu\ \mathbf{F}_i
 \qquad\qquad
-\dot{\theta}_i = \beta\,\bigl(\mathbf{F}_i \cdot \hat{n}_i^{\perp}\bigr) + \eta_i$$
+\dot{\theta}_i = \beta\ \bigl(\mathbf{F}_i \cdot \hat{n}_i^{\perp}\bigr) + \eta_i$$
 
 That rule alone lines thousands of cells up into one heading. But nothing
 coordinates them globally, so a large enough animal holds patches that agree
@@ -136,8 +136,8 @@ Microtubules, kinesin, ATP. Beris–Edwards for the alignment tensor with one
 elastic constant, coupled to Stokes flow, with an active stress proportional to
 the alignment itself:
 
-$$\partial_t Q + \mathbf{u}\cdot\nabla Q \;=\; S(\nabla\mathbf{u}, Q) + \Gamma H
-\qquad\qquad \sigma^{\text{act}} = -\zeta\,Q$$
+$$\partial_t Q + \mathbf{u}\cdot\nabla Q  =  S(\nabla\mathbf{u}, Q) + \Gamma H
+\qquad\qquad \sigma^{\text{act}} = -\zeta\ Q$$
 
 That last term is the whole piece: **alignment is turned into flow, and the flow
 bends the alignment that produced it.** There is no activity level at which an
@@ -162,10 +162,10 @@ densely and drawn as dots, at three settings of the same expression:
 
 $$k = 9\cos(ai)\sin(bi), \qquad e = 9\cos(ci)\sin(fi)$$
 
-$$d = \frac{\lVert (k,e) \rVert^{3}}{999} + 1.2 - \frac{\sin^{3}\!\left(\tfrac{t}{2}+m\right)}{4},
-\qquad p = d^{\,\sin\left(d^{2}-t+m\right)}$$
+$$d = \frac{\lVert (k,e) \rVert^{3}}{999} + 1.2 - \frac{\sin^{3}\left(\tfrac{t}{2}+m\right)}{4},
+\qquad p = d^{\ \sin\left(d^{2}-t+m\right)}$$
 
-$$C = \frac{d}{9} - \frac{t}{24} + m, \qquad x = 99\sin C + k\,p, \qquad y = 99\sin 4C + e\,p$$
+$$C = \frac{d}{9} - \frac{t}{24} + m, \qquad x = 99\sin C + k\ p, \qquad y = 99\sin 4C + e\ p$$
 
 $d$ is the breath, $p$ the stretch, $C$ the lean that carries the figure along
 its path. The three creatures differ in four small integers $(a,b,c,f)$ and one
@@ -190,7 +190,7 @@ a smooth ring kernel $K$ instead of eight neighbours, one smooth growth curve
 $G$ instead of birth and survival integers, and a timestep that moves the field
 by a fraction of the growth rather than all of it.
 
-$$A^{t+\Delta t} \;=\; \Bigl[\, A^{t} + \Delta t \cdot G\bigl(K * A^{t}\bigr) \,\Bigr]_{0}^{1}$$
+$$A^{t+\Delta t}  =  \Bigl[\  A^{t} + \Delta t \cdot G\bigl(K * A^{t}\bigr) \ \Bigr]_{0}^{1}$$
 
 What comes out are not blinkers and gliders but **solitons** — lumps of
 continuous field, smooth-edged and internally structured, that hold themselves
