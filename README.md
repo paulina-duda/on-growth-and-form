@@ -370,3 +370,8 @@ credited above and on the individual piece pages.
 
 Paulina Duda — bioinformatician. The reels go out as
 [@ekspertodniczego](https://instagram.com/ekspertodniczego).
+
+<div align="center">
+<br>
+<a href="https://instagram.com/ekspertodniczego"><img src="docs/social-preview.png" alt="On Growth and Form — biology is the original algorithm" width="820"></a>
+</div>
