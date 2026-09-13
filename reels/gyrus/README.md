@@ -2,7 +2,7 @@
 
 **Wetware** · differential growth, run into a wall
 
-<img src="still.webp" width="320" align="right">
+<img src="loop.webp" width="320" align="right">
 
 > *It would fold anyway. The wall decides where.*
 

@@ -2,7 +2,7 @@
 
 **Wetware** · a shoot apex placing organs where the ones already there object least
 
-<img src="still.webp" width="320" align="right">
+<img src="loop.webp" width="320" align="right">
 
 > *The plant is not counting. You are.*
 

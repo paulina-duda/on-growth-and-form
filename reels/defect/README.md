@@ -2,7 +2,7 @@
 
 **Substrate** · an organism's own parts, with the organism taken away
 
-<img src="still.webp" width="320" align="right">
+<img src="loop.webp" width="320" align="right">
 
 > *Nothing here is alive. It still cannot rest.*
 

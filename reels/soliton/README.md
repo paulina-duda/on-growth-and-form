@@ -2,7 +2,7 @@
 
 **Artificial Life** · Lenia, and what one collision does
 
-<img src="still.webp" width="320" align="right">
+<img src="loop.webp" width="320" align="right">
 
 > *Every one of these was stable on its own.*
 

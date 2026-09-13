@@ -2,7 +2,7 @@
 
 **Substrate** · a mycelium closing its own loops
 
-<img src="still.webp" width="320" align="right">
+<img src="loop.webp" width="320" align="right">
 
 > *A tree branches. A fungus branches back.*
 
