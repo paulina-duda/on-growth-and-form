@@ -10,3 +10,7 @@ __pycache__/
 
 # Rendered output
 out/
+
+# Personal photographs are not part of this project.
+docs/avatar*.jpg
+docs/avatar*.jpeg

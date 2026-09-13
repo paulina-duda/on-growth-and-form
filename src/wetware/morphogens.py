@@ -415,7 +415,7 @@ class Tear:
     going. Cells are tied to their neighbours, so a cell that walks is pulled by
     the ones around it, and it turns toward the pull. That one rule is enough to
     line thousands of them up into a single heading (Ferrante et al. 2013).
-    Prakash, Bull & Prakash 2022 showed placozoan tissue tearing under its own
+    Prakash, Bull & Prakash 2021 showed placozoan tissue tearing under its own
     crawling -- motility-induced fracture -- which is what this reproduces; the
     model is the Ferrante coupling with bonds that yield, not theirs.
 

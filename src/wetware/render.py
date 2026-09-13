@@ -186,7 +186,7 @@ EDITIONS: dict[str, dict] = {
         "caption": (
             "Trichoplax adhaerens  ·  fission",
             "walk · turn to the pull · stretch · give",
-            "motility-induced fracture, Prakash 2022",
+            "motility-induced fracture, Prakash 2021",
         ),
         "hook": ("It reproduces by disagreeing with itself.",),
     },

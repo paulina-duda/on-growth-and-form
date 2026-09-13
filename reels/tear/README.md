@@ -43,10 +43,9 @@ about to open along lights up before it opens.
 ```
 Trichoplax adhaerens  ·  fission
 walk · turn to the pull · stretch · give
-motility-induced fracture, Prakash 2022
+motility-induced fracture, Prakash 2021
 ```
 
 <sub>Ferrante et al. 2013 for the coupling, Prakash et al. 2021 for the
-fracture. The data block above is quoted from the frame as rendered, and the
-year printed there is wrong. 1080 × 1920, 10 s.
+fracture; both cited in frame. 1080 × 1920, 10 s.
 [On Instagram →](https://instagram.com/ekspertodniczego)</sub>

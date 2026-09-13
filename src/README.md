@@ -68,9 +68,9 @@ cost something to find out — including the ones that record a mistake.
 ## Credit
 
 `biomorph/hydrocreatures.py` is inspired by the generative sketches of
-[**@yuruyurau**](https://x.com/yuruyurau). The implementation, the harmonic
-search, the composition and the rendering here are my own — no code of his was
-used, and he is not an author of this.
+**@yuruyurau**, who posts them on X: [x.com/yuruyurau](https://x.com/yuruyurau).
+The implementation, the harmonic search, the composition and the rendering here
+are my own — no code of his was used, and he is not an author of this.
 
 ## Licensing
 

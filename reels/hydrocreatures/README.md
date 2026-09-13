@@ -42,8 +42,8 @@ a purpose.
 Nothing grows, nothing senses, nothing decides. Whatever you caught them wanting
 is yours.
 
-<sub>Inspired by the generative sketches of
-[@yuruyurau](https://x.com/yuruyurau). The implementation, harmonic search,
+<sub>Inspired by the generative sketches of **@yuruyurau**, who posts them on X:
+[x.com/yuruyurau](https://x.com/yuruyurau). The implementation, harmonic search,
 composition and rendering here are my own — no code of his was used, and he is
 not an author of this. 1080 × 1920, 8 s.
 [On Instagram →](https://instagram.com/ekspertodniczego)</sub>

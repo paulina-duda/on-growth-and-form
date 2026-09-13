@@ -57,12 +57,10 @@ patch of skin. How far a bond has been stretched at that instant.
 
 ---
 
-## The six models
-
-Each entry is the update rule as implemented, followed by the parameters the
-clip was actually run at. None of these rules contains the thing it produces:
-there is no angle in the phyllotaxis rule, no fold in the growth rule, no
-membrane, no stripe count and no spiral.
+Each entry below is the update rule as implemented, followed by the parameters
+the clip was actually run at. None of these rules contains the thing it
+produces: there is no angle in the phyllotaxis rule, no fold in the growth rule,
+no membrane, no stripe count and no spiral.
 
 ### Defect — an active nematic with no cell around it
 
@@ -338,8 +336,9 @@ caption:
 - **Bert Wang-Chak Chan, 2019** — Lenia — *Soliton*
 
 *Hydrocreatures* rests on no paper. Inspired by the generative sketches of
-[**@yuruyurau**](https://x.com/yuruyurau) — the implementation, harmonic search,
-composition and rendering here are my own. No code of his was used.
+**@yuruyurau**, who posts them on X: [x.com/yuruyurau](https://x.com/yuruyurau).
+The implementation, harmonic search, composition and rendering here are my own —
+no code of his was used, and he is not an author of this.
 
 ---
 
